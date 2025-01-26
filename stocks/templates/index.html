@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home - MindMetrics{% endblock %}
+
+{% block content %}
+    <div id="main_page">
+        <h1>Welcome to stocks tracker!</h1>
+        <p>This app will help you with your investments.</p>
+        {% if not is_logged_in %}
+        <p>Please log in to your user account or sign up if you are not registered.</p>
+        {% else %}
+        <p>Welcome {{ username }}</p>
+        {% endif %}
+    </div>
+{% endblock %}
