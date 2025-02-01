@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +18,7 @@
         </div>
         {% endif %}
         <div class="button-container">
+            <button type="submit", onclick="redirectToHome()">Home</button>
         {% if not is_logged_in %}
             <button type="submit" onclick="redirectToLogin()">Log In</button>
             <button type="submit" onclick="redirectToRegister()">Sign Up</button> 
