@@ -3,5 +3,13 @@ function redirectToHome() {
 }
 
 function redirectToLogin() {
-    window.location.href = 'login/'
+    window.location.href = '/login_view/'
+}
+
+function redirectToRegister() {
+    window.location.href = '/register_view/'
+}
+
+function redirectToLogout() {
+    window.location.href = '/logout/'
 }

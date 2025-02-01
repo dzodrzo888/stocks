@@ -5,8 +5,13 @@
 {% block content %}
     <div id='login'>
         <h1>Login</h1>
-        <form method="post">
+        <form method="post" action="{% url 'login' %}">
             {% csrf_token %}
+            {% if message %}
+            <div>
+                <h2>{{message}}</h2>
+            </div>
+            {%endif%}
             <div class="form-group">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" class="form-control" required>
